@@ -24,10 +24,10 @@ pipeline {
                 // Deploy the HTML page to the IIS server
                 
                 // Define the path where your HTML page should be deployed on the IIS server
-               // def iisPath = 'C:\\inetpub\\wwwroot\\nritest'
+                def iisPath = 'C:\\inetpub\\wwwroot\\nritest'
                 
                 // Copy the HTML files to the IIS server
-               // bat "xcopy /Y /E .\\* ${iisPath}"
+                bat "xcopy /Y /E .\\* ${iisPath}"
                 echo 'deployed' 
             }
         }
