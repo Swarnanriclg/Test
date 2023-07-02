@@ -27,7 +27,7 @@ pipeline {
                // def iisPath = 'C:\\inetpub\\wwwroot\\nritest'
                 
                 // Copy the HTML files to the IIS server
-                bat "xcopy /Y /E .\\* C:\\inetpub\\wwwroot\\nritest"
+               // bat "xcopy /Y /E .\\* C:\\inetpub\\wwwroot\\nritest"
                 echo 'deployed' 
             }
         }
